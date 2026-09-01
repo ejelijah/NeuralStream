@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class EEGNet(nn.Module):
-    def __init__(self, nb_classes=4, Chans=22, Samples=1000, dropoutRate=0.6): # Increased Dropout to 0.6
+    def __init__(self, nb_classes=4, Chans=22, Samples=1000, dropoutRate=0.75): # Increased Dropout to 0.75
         super(EEGNet, self).__init__()
         
         self.block1 = nn.Sequential(
